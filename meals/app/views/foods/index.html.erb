@@ -1,0 +1,9 @@
+<h1>All Foods Here</h1>
+
+<% @foods.each do |food| %>
+<div class="foods">
+  <h4>Type of Food: <%= food.food_type %></h4>
+  <p>Calories: <%= food.calories %></p>
+</div>
+
+<% end %>

@@ -1,0 +1,10 @@
+<h1>All Meals Here</h1>
+
+<% @meals.each do |meal| %>
+<div class="meals">
+  <p><%= link_to meal.title, meal %></p>
+  <p><%#= link_to meal.img_url, meal %></p>
+  <img src="<%= meal.img_url %>">
+</div>
+
+<% end %>

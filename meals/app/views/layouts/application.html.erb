@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meals</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <h2><%= link_to "All Meals", meals_path %> | <%= link_to "Add New Meal", new_meal_path %></h3>
+    <h2><%= link_to "All Foods", foods_path %> | <%= link_to "Add New Food", new_food_path %></h2>
+    <%= yield %>
+  </body>
+</html>
