@@ -2,8 +2,11 @@
 
 <% @foods.each do |food| %>
 <div class="foods">
-  <h4>Type of Food: <%= food.food_type %></h4>
-  <p>Calories: <%= food.calories %></p>
+  <h3>Type of Food: <%= food.food_type %></h3>
+  <h3>Calories: <%= food.calories %></h3>
+  <h4><%= link_to "Show Food", food %></h4>
+
+    <h3><%= image_tag food.img_url %> </h3>
 </div>
 
 <% end %>

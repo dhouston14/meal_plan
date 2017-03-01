@@ -1,1 +1,16 @@
 <h1>Show Meal</h1>
+
+
+<div class="user_meal">
+
+<%= link_to "EDIT", edit_meal_path %>
+  <h2>Main: </h2>
+  <h3><%= @meal.main %></h3>
+  <h3><%#= image_tag @food.img_url %> </h3>
+
+  <h2>Side: </h3>
+  <h3><%= @meal.side %></h3>
+  <h3><%#= image_tag @food.img_url %> </h3>
+
+
+</div>

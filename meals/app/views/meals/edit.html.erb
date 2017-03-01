@@ -1,0 +1,26 @@
+
+
+<div class="edit_meal">
+<h1>Edit <%=@meal.title %> </h1>
+
+<%= form_for @meal do |f| %>
+  <h2><%= f.label :title %></h2>
+  <%= f.text_field :title %>
+
+  <h2><%= f.label :image %></h2>
+  <%= f.text_field :img_url%>
+
+  <h2><%= f.label :main %></h2>
+  <%= f.text_field :main %>
+
+  <h2><%= f.label :side %></h2>
+  <%= f.text_field :side %>
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>
+
+<%= form_for @meal, method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>
+</div>

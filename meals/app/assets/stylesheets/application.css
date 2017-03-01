@@ -18,3 +18,49 @@ body {
   text-align: center;
   background: grey;
 }
+
+h1 {
+  font-style: italic;
+  /*font-size: 35px;*/
+}
+
+.user_meal {
+  display: inline-block;
+  text-align: center;
+}
+
+.meals {
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+  /*border-radius: 10px;*/
+  /*display: inline-flex;*/
+}
+
+.foods {
+  /*display: inline-flex;*/
+  display: inline-block;
+  padding: 20px;
+}
+
+.edit_meal {
+  text-align: center;
+  display: inline-block;
+}
+
+.edit_food {
+  text-align: center;
+  display: inline-block;
+  /*padding: 20px;*/
+  /*display: inline-grid;*/
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+}
+
+p {
+  font-style: italic;
+  font-size: 20px;
+}

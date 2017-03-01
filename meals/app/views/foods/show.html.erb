@@ -1,1 +1,9 @@
-<h1>Show Food</h1>
+<h1><%= @food.food_type %> </h1>
+
+<div class="user_food">
+
+<%= link_to "EDIT", edit_food_path %>
+  <h4>Calories: <%= @food.calories %></h4>
+  <h3><%= image_tag @food.img_url %> </h3>
+  <h3>Description: <%= @food.describe %></h3>
+</div>

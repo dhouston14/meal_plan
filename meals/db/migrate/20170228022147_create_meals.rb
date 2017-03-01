@@ -3,8 +3,9 @@ class CreateMeals < ActiveRecord::Migration[5.0]
     create_table :meals do |t|
       t.string :title
       t.string :img_url
+      t.string :main
+      t.string :side
 
-      t.timestamps
     end
   end
 end

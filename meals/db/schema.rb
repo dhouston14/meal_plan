@@ -18,13 +18,15 @@ ActiveRecord::Schema.define(version: 20170228022147) do
   create_table "foods", force: :cascade do |t|
     t.string  "food_type"
     t.integer "calories"
+    t.string  "img_url"
+    t.string  "describe"
   end
 
   create_table "meals", force: :cascade do |t|
-    t.string   "title"
-    t.string   "img_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "title"
+    t.string "img_url"
+    t.string "main"
+    t.string "side"
   end
 
 end

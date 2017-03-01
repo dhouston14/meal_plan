@@ -3,7 +3,8 @@ class CreateFoods < ActiveRecord::Migration[5.0]
     create_table :foods do |t|
       t.string :food_type
       t.integer :calories
-      # t.references :meal, index: true, foreign_key: true
+      t.string :img_url
+      t.string :describe
 
     end
   end
